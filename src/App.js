@@ -8,8 +8,10 @@ import Leaderboard from './pages/Leaderboard';
 import Login from './pages/Login';
 import NewPoll from './pages/NewPoll';
 import Poll from './pages/Poll';
+import Error from './pages/Error';
+import PrivateWrapper from './components/PrivateWrapper';
 
-const App = ({ dispatch, loggedIn }) => {
+const App = ({ dispatch }) => {
   useEffect(() => {
     dispatch(receiveInitialData());
   }, [dispatch]);
@@ -19,23 +21,13 @@ const App = ({ dispatch, loggedIn }) => {
       <Navbar />
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route
-          path="/"
-          element={loggedIn ? <Dashboard /> : <Navigate to="/login" replace />}
-        />
-        <Route
-          path="/leaderboard"
-          element={loggedIn ? <Leaderboard /> : <Navigate to="/login" replace />}
-        />
-        <Route
-          path="/add"
-          element={loggedIn ? <NewPoll /> : <Navigate to="/login" replace />}
-        />
-        <Route
-          path="/questions/:id"
-          element={loggedIn ? <Poll /> : <Navigate to="/login" replace />}
-        />
-        <Route path="*" element={<Navigate to={loggedIn ? "/" : "/login"} replace />} />
+        <Route element={<PrivateWrapper />}>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/leaderboard" element={<Leaderboard />} />
+          <Route path="/add" element={<NewPoll />} />
+          <Route path="/questions/:id" element={<Poll />} />
+        </Route>
+        <Route path="*" element={<Error/>} />
       </Routes>
     </div>
   );

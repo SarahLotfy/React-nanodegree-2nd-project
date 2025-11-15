@@ -1,5 +1,102 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Login Component renders without crashing 1`] = `
+<div>
+  <div
+    class="flex items-center justify-center mt-16"
+  >
+    <form
+      class="w-full max-w-sm bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg"
+    >
+      <h2
+        class="text-2xl font-semibold text-center mb-6 text-gray-900 dark:text-white"
+      >
+        Login
+      </h2>
+      <div
+        class="flex justify-center dropdown"
+      >
+        <label
+          class="btn m-1"
+          data-testid="existing-user-label"
+          tabindex="0"
+        >
+          Existing User
+        </label>
+        <ul
+          class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52"
+          tabindex="0"
+        >
+          <li>
+            <span>
+              Sarah Edo
+            </span>
+          </li>
+          <li>
+            <span>
+              Tyler McGinnis
+            </span>
+          </li>
+          <li>
+            <span>
+              Mike Tsamis
+            </span>
+          </li>
+          <li>
+            <span>
+              Zenobia Oshikanlu
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="mb-5"
+      >
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-200"
+          data-testid="username-label"
+          for="username"
+        >
+          Username
+        </label>
+        <input
+          class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-blue-500 focus:border-blue-500"
+          data-testid="username-input"
+          id="username"
+          type="text"
+          value="sarahedo"
+        />
+      </div>
+      <div
+        class="mb-5"
+      >
+        <label
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-200"
+          data-testid="password-label"
+          for="password"
+        >
+          Password
+        </label>
+        <input
+          class="w-full p-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-gray-50 dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-blue-500 focus:border-blue-500"
+          data-testid="password-input"
+          id="password"
+          type="password"
+          value="password123"
+        />
+      </div>
+      <button
+        class="w-full mt-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg"
+        data-testid="submit-login"
+        type="submit"
+      >
+        Login
+      </button>
+    </form>
+  </div>
+</div>
+`;
+
 exports[`Login should render the component 1`] = `
 Object {
   "asFragment": [Function],

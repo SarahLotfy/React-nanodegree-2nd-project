@@ -2,9 +2,13 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { handleAddAnswer } from '../actions/polls';
+import Error from './Error';
 
 const Poll = ({ authUser, users, questions, dispatch }) => {
   const { id } = useParams();
+
+  if (!questions[id]) return <Error />;
+
   const poll = questions[id];
 
   const author = users[poll.author];
@@ -19,6 +23,7 @@ const Poll = ({ authUser, users, questions, dispatch }) => {
   };
 
   const [voteCount, setVoteCount] = useState(initialVoteCount);
+  
 
   const totalVotes = voteCount.optionOne + voteCount.optionTwo;
 
