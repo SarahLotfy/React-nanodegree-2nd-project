@@ -1,14 +1,9 @@
 import { useState } from 'react';
 import { connect } from 'react-redux';
-import { useParams } from 'react-router-dom';
 import { handleAddAnswer } from '../actions/polls';
-import Error from './Error';
 
-const Poll = ({ authUser, users, questions, dispatch }) => {
-  const { id } = useParams();
-
-  if (!questions[id]) return <Error />;
-
+const Poll = ({ id, authUser, users, questions, dispatch }) => {
+  
   const poll = questions[id];
 
   const author = users[poll.author];

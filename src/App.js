@@ -7,7 +7,7 @@ import Dashboard from './pages/Dashboard';
 import Leaderboard from './pages/Leaderboard';
 import Login from './pages/Login';
 import NewPoll from './pages/NewPoll';
-import Poll from './pages/Poll';
+import PollWrapper from './pages/PollWrapper';
 import Error from './pages/Error';
 import PrivateWrapper from './components/PrivateWrapper';
 
@@ -25,8 +25,8 @@ const App = ({ dispatch }) => {
           <Route path="/" element={<Dashboard />} />
           <Route path="/leaderboard" element={<Leaderboard />} />
           <Route path="/add" element={<NewPoll />} />
-          <Route path="/questions/:id" element={<Poll />} />
-        </Route>
+          <Route path="/questions/:id" element={<PollWrapper />} />
+          </Route>
         <Route path="*" element={<Error/>} />
       </Routes>
     </div>
