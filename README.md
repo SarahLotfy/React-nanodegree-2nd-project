@@ -9,7 +9,8 @@ The `_DATA.js` file represents a fake database and methods that let you access t
 - Clone the Project.
 - Install the dependencies: `npm install`
 - Start the server: `npm run start`
-
+- To run the tests:  `npm run test`
+  
 ## How it works?
 
 - The user needs to login before they can vote or create poll
