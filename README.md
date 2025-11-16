@@ -14,8 +14,6 @@ A modern, interactive polling application built with React and Redux for employe
 - [API Documentation](#api-documentation)
 - [Testing](#testing)
 - [Development](#development)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## 🎯 Overview
 
