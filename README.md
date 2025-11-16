@@ -4,16 +4,17 @@ A modern, interactive polling application built with React and Redux for employe
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
+- [Employee Polls Web Application](#employee-polls-web-application)
+- [Overview](#-overview)
 - [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Project Structure](#project-structure)
-- [Installation & Setup](#installation--setup)
-- [Usage Guide](#usage-guide)
-- [Application Architecture](#application-architecture)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Development](#development)
+- [Technology Stack](#-technology-stack)
+- [Project Structure](#-project-structure)
+- [Installation & Setup](#-installation--setup)
+- [Usage Guide](#-usage-guide)
+- [Application Architecture](#-application-architecture)
+- [API Documentation](#-api-documentation)
+- [Testing](#-testing)
+- [Development](#-development)
 
 ## 🎯 Overview
 
@@ -472,8 +473,3 @@ test('renders component', () => {
 - Redux DevTools: Install the browser extension for Redux state inspection
 - Logger Middleware: Check console for action logs
 - React DevTools: Use React DevTools for component inspection
-
-
-
-
-
